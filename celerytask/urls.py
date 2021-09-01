@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from task.views import GenerateRandomUserView, GenerateRandomUserForm, UserListView
+from task.views import GenerateRandomUserView, UserListView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
