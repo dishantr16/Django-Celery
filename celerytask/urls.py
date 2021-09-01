@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from task.views import GenerateRandomUserView, GenerateRandomUserForm, UserListView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('users/', UserListView.as_view(), name='users_list'),
+    path('generate/', GenerateRandomUserView.as_view(), name='generate')
+
 ]
